@@ -1,0 +1,27 @@
+'''.   7x21
+       nxm
+    ---------.|.---------
+    ------.|..|..|.------
+    ---.|..|..|..|..|.---
+    -------WELCOME-------
+    ---.|..|..|..|..|.---
+    ------.|..|..|.------
+    ---------.|.---------
+'''
+n,m= map(int,input().split())
+pat = ".|."
+dash ="---"
+patcount = 1 
+dashcount = (n)//2 #3
+for i in range(n//2):
+    print(dash*dashcount+pat*patcount+dash*dashcount)
+    patcount+=2 
+    dashcount-=1
+t = int(((n*3)-7)/2)
+print("-"*t+"WELCOME"+"-"*t)
+patcount=n-2
+dashcount=1
+for i in range(n//2):
+    print(dash*dashcount+patcount*pat+dash*dashcount)
+    patcount-=2 
+    dashcount+=1
