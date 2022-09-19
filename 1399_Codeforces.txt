@@ -1,0 +1,17 @@
+tc = int(input())
+for i in range(tc):
+    flag = 1
+    dum = int(input())
+    x = sorted(list(map(int,input().split())))
+    if(len(x)==1):
+        print("Yes")
+        break
+    else:
+        for i in range(len(x)-1):
+            if(x[i]==x[i+1]):
+                continue
+            elif(x[i]+1==x[i+1]):
+                continue
+            else:
+                flag = 0
+    print("Yes") if flag==1 else print("No")

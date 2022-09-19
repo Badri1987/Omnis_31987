@@ -1,0 +1,5 @@
+a,b,c,sum=sorted(map(int,input().split()))
+i = sum-(b+c)
+j = sum-(a+c)
+k = sum-(a+b)
+print(abs(i),abs(j),abs(k))

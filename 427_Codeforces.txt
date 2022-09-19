@@ -1,0 +1,13 @@
+x = int(input())
+l = list(map(int,input().split()))
+pol = 0
+ans = 0
+for i in range(x):
+    if(l[i]<0 and pol==0):
+        ans+=1
+    elif(l[i]>0):
+        pol+=l[i]
+    elif(l[i]<0 and pol>0):
+        pol-=1 
+print(ans)
+    
